@@ -1,4 +1,4 @@
-# commands
+# List of useful commands
 Repository with useful commands
 
 #### Docker
