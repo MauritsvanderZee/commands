@@ -20,3 +20,9 @@ After download --> convert .mkv to .mp4 file
 ```
 ffmpeg -i input.mkv -codec copy output.mp4
 ```
+
+#### eruption (LED controller for keyboards)
+
+```
+$ paru -Sy aur/eruption-git
+```
