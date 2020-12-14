@@ -1,5 +1,5 @@
 # List of useful commands
-Repository with useful commands
+This repository is a collection of useful commands. It is by no means complete and will be extended as I continue my journey as software developer.
 
 #### Docker
 
