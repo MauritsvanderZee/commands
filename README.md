@@ -26,3 +26,21 @@ ffmpeg -i input.mkv -codec copy output.mp4
 ```
 $ paru -Sy aur/eruption-git
 ```
+
+#### Compodoc
+Issue with latest Angular versions in combination with electron:
+
+```
+cd <folder>
+echo '{' > tsconfig.compodoc.json
+echo '  "extends": "./tsconfig.json",' >> tsconfig.compodoc.json
+echo '  "files": [' >> tsconfig.compodoc.json
+for i in $(find src/ -name "*.ts")
+do
+   echo '    "'$i'",' >> tsconfig.compodoc.json
+done
+echo '  ],' >> tsconfig.compodoc.json
+echo '}' >> tsconfig.compodoc.json
+npx @compodoc/compodoc -p tsconfig.compodoc.json
+```
+[[Source]](https://github.com/compodoc/compodoc/issues/927#issuecomment-597624654)
