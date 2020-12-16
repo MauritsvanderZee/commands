@@ -44,3 +44,11 @@ echo '}' >> tsconfig.compodoc.json
 npx @compodoc/compodoc -p tsconfig.compodoc.json
 ```
 [[Source]](https://github.com/compodoc/compodoc/issues/927#issuecomment-597624654)
+
+### Latex
+
+Convert a file to pdf with inkscape:
+
+```
+inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
+```
