@@ -53,7 +53,7 @@ Convert a file to pdf with inkscape:
 inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
 ```
 
-GPG Keys for GitHub
+### GPG Keys for GitHub
 
 ```
 # Generate new key, set your email you are using with your GitHub account
