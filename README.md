@@ -52,3 +52,30 @@ Convert a file to pdf with inkscape:
 ```
 inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
 ```
+
+GPG Keys for GitHub
+
+```
+# Generate new key, set your email you are using with your GitHub account
+$ gpg --gen-key
+
+# List all your local keys
+$ gpg --list-secret-keys --keyid-format LONG
+
+# Set key in local git config
+$ git config --global user.signingkey XXXXXXXXXXXXXXXX
+
+# Enable git signing
+$ git config --global commit.gpgsign true
+
+# Set config that password will not be asked everytime a commit is performed
+$ sudo nano ~/.gnupg/gpg-agent.conf
+
+# Add line:
+pinentry-program /usr/local/bin/pinentry-mac
+
+# Export your key for GitHub
+$ gpg --armor --export XXXXXXXXXXXXXXXX > key.txt
+
+# Copy the key from the file to your GitHub settings
+```
