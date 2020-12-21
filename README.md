@@ -7,6 +7,12 @@ Setup docker container with mysql:
 ```
 docker run -e MYSQL_ROOT_PASSWORD=root -d -p "3306:3306" --restart=always mysql:5.7
 ```
+
+Setup docker container with keycloak:
+```
+docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:12.0.1
+```
+
 #### destreamer
 
 destreamer can be used to download videos from MS Teams / MS Streams.
