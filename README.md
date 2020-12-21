@@ -77,8 +77,11 @@ $ git config --global commit.gpgsign true
 # Set config that password will not be asked everytime a commit is performed
 $ sudo nano ~/.gnupg/gpg-agent.conf
 
-# Add line:
+# Add line for mac:
 pinentry-program /usr/local/bin/pinentry-mac
+
+#Add line for Linux
+pinentry-program /usr/bin/pinentry-qt
 
 # Export your key for GitHub
 $ gpg --armor --export XXXXXXXXXXXXXXXX > key.txt
