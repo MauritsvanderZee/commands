@@ -13,6 +13,11 @@ Setup docker container with keycloak:
 docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:12.0.1
 ```
 
+Setup docker container with MongoDB:
+```
+docker run -p "27017:27017" -d --name mongo --restart always mongo:4-bionic
+```
+
 #### destreamer
 
 destreamer can be used to download videos from MS Teams / MS Streams.
