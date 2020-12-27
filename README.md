@@ -33,6 +33,15 @@ ffmpeg -i input.mkv -codec copy output.mp4
 $ paru -Sy aur/eruption-git
 ```
 
+#### Renew [letsencrypt](https://letsencrypt.org/) certificats
+
+```
+$ systemctl stop nginx
+$ certbot renew
+$ systemctl start nginx
+```
+
+
 #### Compodoc
 Issue with latest Angular versions in combination with electron:
 
