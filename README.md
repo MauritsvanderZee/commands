@@ -102,3 +102,17 @@ $ gpg --armor --export XXXXXXXXXXXXXXXX > key.txt
 
 # Copy the key from the file to your GitHub settings
 ```
+
+### Set JAVA HOME Variable on Linux
+
+```
+$ which java
+```
+
+```
+$ readlink -f /usr/bin/java
+```
+
+```
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/bin/java
+```
