@@ -73,6 +73,11 @@ Convert a file to pdf with inkscape:
 inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
 ```
 
+Count words
+```
+pdftotext file.pdf - | wc -w
+```
+
 ### GPG Keys for GitHub
 
 ```
