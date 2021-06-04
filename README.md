@@ -78,6 +78,10 @@ Count words
 pdftotext file.pdf - | wc -w
 ```
 
+```
+texcount -1 directory/file.tex 
+```
+
 ### GPG Keys for GitHub
 
 ```
